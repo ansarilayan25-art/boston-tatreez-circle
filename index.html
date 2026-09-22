@@ -396,6 +396,7 @@
   var base = today < programStart ? programStart : today;
   var y = base.getFullYear();
   var m = base.getMonth();
+  var dowLabels = ['S','M','T','W','T','F','S'];
   var monthFmt = new Intl.DateTimeFormat('en-US', { month:'long', year:'numeric' });
 
   function saturdaysInMonth(year, monthIndex){
